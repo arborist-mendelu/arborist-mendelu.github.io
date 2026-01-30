@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arborist Mendelu</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0f172a;        /* slate-900 */
+      --card: #111827;      /* gray-900 */
+      --text: #e5e7eb;      /* gray-200 */
+      --muted: #9ca3af;     /* gray-400 */
+      --accent: #22c55e;    /* green-500 */
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: 'Inter', system-ui, sans-serif;
+      background: radial-gradient(1200px 600px at 10% 0%, #1f2933, var(--bg));
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 4rem 1.5rem 2rem;
+    }
+
+    h1 {
+      font-size: clamp(2.2rem, 5vw, 3.5rem);
+      margin: 0 0 0.5rem 0;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+    }
+
+    header p {
+      max-width: 600px;
+      color: var(--muted);
+      font-size: 1.1rem;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem 4rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0));
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 1.25rem;
+      padding: 1.75rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: transform 0.2s ease, border-color 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(34,197,94,0.6);
+    }
+
+    .card h2 {
+      margin: 0 0 0.5rem 0;
+      font-size: 1.25rem;
+      font-weight: 600;
+    }
+
+    .card p {
+      margin: 0 0 1.5rem 0;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .card a {
+      align-self: flex-start;
+      text-decoration: none;
+      color: var(--accent);
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+
+    footer {
+      border-top: 1px solid rgba(255,255,255,0.08);
+      padding: 1.5rem;
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.85rem;
+    }
+
+    footer a {
+      color: var(--muted);
+      text-decoration: none;
+    }
+
+    footer a:hover { color: var(--text); }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Arborist Mendelu</h1>
+    <p>
+      Research and development projects focused on arboriculture,
+      wood tomography, and data analysis. Open and available on GitHub.
+    </p>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>TomoTree</h2>
+      <p>Python tools for analysis of tomographic and resistograph tree data.</p>
+      <a href="https://arborist-mendelu.github.io/tomotree" target="_blank">View project →</a>
+    </section>
+
+    <section class="card">
+      <h2>Data & Tools</h2>
+      <p>Utility scripts, datasets.</p>
+      <a href="https://github.com/arborist-mendelu" target="_blank">GitHub profile →</a>
+    </section>
+  </main>
+
+  <footer>
+    © 2026 Arborist Mendelu · <a href="https://github.com/arborist-mendelu">github.com/arborist-mendelu</a>
+  </footer>
+
+</body>
+</html>
